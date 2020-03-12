@@ -1,0 +1,10 @@
+tmp
+temp
+node_modules
+.serverless
+node_modules
+.DS_Store
+package-lock.json
+.build
+# VSCode specific
+.vscode/

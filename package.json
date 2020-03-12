@@ -1,0 +1,22 @@
+{
+  "name": "mikro-orm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run seed && ts-node-dev --inspect --no-notify --respawn --transpileOnly ./src",
+    "seed": "rm -rf dev.db; touch dev.db; sqlite3 dev.db < seed.sql"
+  },
+  "dependencies": {
+    "mikro-orm": "^3.4.1",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "ts-node": "^8.5.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
